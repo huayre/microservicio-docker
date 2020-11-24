@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7328748d-d98f-436e-857e-94a5f406a790" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="ProjectId" id="1kbzp04nI3hiXGcwuf6F5VcJqCf" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/MAlmacen/app" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\UNIVERSIDAD\2020-I\PROYECTO FINAL\MAlmacen\app" />
+      <recent name="E:\UNIVERSIDAD\2020-I\PROYECTO FINAL\MCompras\app" />
+      <recent name="E:\UNIVERSIDAD\2020-I\PROYECTO FINAL\MVentas\app" />
+      <recent name="E:\UNIVERSIDAD\2020-I\PROYECTO FINAL" />
+      <recent name="E:\UNIVERSIDAD\2020-I\PROYECTO FINAL\AppCliente\App\resources\views\app" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\UNIVERSIDAD\2020-I\PROYECTO FINAL\MCompras\app\app" />
+      <recent name="E:\UNIVERSIDAD\2020-I\PROYECTO FINAL\MVentas\app\app" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7328748d-d98f-436e-857e-94a5f406a790" name="Default Changelist" comment="" />
+      <created>1605984259407</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605984259407</updated>
+      <workItem from="1605984261297" duration="7258000" />
+      <workItem from="1605995915224" duration="4713000" />
+      <workItem from="1606018928050" duration="6084000" />
+      <workItem from="1606051833850" duration="58515000" />
+      <workItem from="1606140952422" duration="2521000" />
+      <workItem from="1606147221772" duration="18490000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="423" y="169" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606168262145">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="423" y="169" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1606168262145" />
+    <state x="519" y="137" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1606061499125">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="519" y="137" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1606061499125" />
+    <state x="413" y="122" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606098650546">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="122" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1606098650546" />
+    <state x="414" y="86" key="NewPhpClassDialog" timestamp="1606097266495">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="414" y="86" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1606097266495" />
+    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1606057436367">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1606057436367" />
+  </component>
+</project>

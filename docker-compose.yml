@@ -1,0 +1,133 @@
+version: '3.8'
+services:
+  bdalmacen:
+    container_name: bdalmacen
+    image: mysql:8.0
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_ROOT_PASSWORD: bdalmacen
+      MYSQL_DATABASE: bdalmacen
+    ports:
+      - '3306:3306'
+    volumes:
+      - ./MAlmacen/bdMAlmacen:/var/lib/mysql
+  appalmacen:
+    container_name: appalmacen
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '8001:80'
+    expose:
+      - '8001'
+    volumes:
+      - ./MAlmacen/app:/var/www/html
+    depends_on:
+      - bdalmacen
+  bdventas:
+    container_name: bdventas
+    image: mysql:8.0
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_ROOT_PASSWORD: bdventas
+      MYSQL_DATABASE: bdventas
+    ports:
+      - '3307:3306'
+    volumes:
+      - ./MVentas/bdMVentas:/var/lib/mysql
+  appventas:
+    container_name: appventas
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '8002:80'
+    expose:
+      - '8002'
+    volumes:
+      - ./MVentas/app:/var/www/html
+    depends_on:
+      - bdventas
+  bdcompras:
+    container_name: bdcompras
+    image: mysql:8.0
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_ROOT_PASSWORD: bdcompras
+      MYSQL_DATABASE: bdcompras
+    ports:
+      - '3308:3306'
+    volumes:
+      - ./MCompras/bdCompras:/var/lib/mysql
+  appcompras:
+    container_name: appcompras
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '8003:80'
+    expose:
+      - '8003'
+    volumes:
+      - ./MCompras/app:/var/www/html
+    depends_on:
+      - bdcompras
+  bdgateway:
+    container_name: bdgateway
+    image: mysql:8.0
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_ROOT_PASSWORD: bdgateway
+      MYSQL_DATABASE: bdgateway
+    ports:
+      - '3309:3306'
+    volumes:
+      - ./ApiGateway/bdGateway:/var/lib/mysql
+  appgateway:
+    container_name: appgateway
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '8004:80'
+    expose:
+      - '8004'
+    volumes:
+      - ./ApiGateway/App:/var/www
+      - ./ApiGateway/App/public:/var/www/html
+    depends_on:
+      - bdgateway
+  appcliente:
+    container_name: appcliente
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '8005:80'
+    volumes:
+      - ./AppCliente/App:/var/www
+      - ./AppCliente/App/public:/var/www/html
+  zookeeper:
+    image: wurstmeister/zookeeper
+    expose:
+      - "2181"
+  kafka:
+    image: wurstmeister/kafka
+    depends_on:
+      - zookeeper
+    ports:
+      - "9092:9092"
+    environment:
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_LISTENERS: PLAINTEXT://kafka:29092,PLAINTEXT_HOST://localhost:9092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:29092,PLAINTEXT_HOST://localhost:9092
+      KAFKA_CREATE_TOPICS: "stock:1:1"
+
+
+
+
+
+
+
